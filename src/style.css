@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+
+}
+
+.flex {
+    min-height: 66vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.box.confirmed {
+    border: 1px solid #ce9b61;
+    background: #E7B334;
+}
+
+.box.recovered {
+    border: 1px solid #ce9b61;
+    background: #88F061;
+}
+
+.box.deaths {
+    border: 1px solid #ce9b61;
+    background: #E25656;
+}
+
+@media screen and (min-width: 900px) {
+    .flex {
+        flex-wrap: nowrap;
+    }
+}
+
+.box {
+    max-width: 300px;
+    padding: 2em 1em;
+    line-height: 1.5;
+    font-size: 2em;
+    
+}
